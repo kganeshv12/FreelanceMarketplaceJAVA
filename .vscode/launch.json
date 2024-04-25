@@ -26,6 +26,16 @@
           "ignoreFailures": true
         }
       ]
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-MajorApplication<major>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.sid.major.MajorApplication",
+      "projectName": "major",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

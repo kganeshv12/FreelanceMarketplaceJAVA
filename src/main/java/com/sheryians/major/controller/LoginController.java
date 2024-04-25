@@ -7,7 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+// import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -21,8 +21,8 @@ import com.sheryians.major.model.User;
 
 @Controller
 public class LoginController {
-    @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    // @Autowired
+    // private BCryptPasswordEncoder bCryptPasswordEncoder;
     @Autowired
     UserRepository userRepository;
     @Autowired
@@ -54,7 +54,7 @@ public class LoginController {
     @PostMapping("/register")
     public String registerPost(@ModelAttribute("user") User user, HttpServletRequest request) throws ServletException {
         String password = user.getPassword();
-        user.setPassword(bCryptPasswordEncoder.encode(password));
+        // user.setPassword(bCryptPasswordEncoder.encode(password));
 
         // Check if the user is registering as a freelancer
         boolean isFreelancer = "freelancer".equals(user.getRoleType()); // Assuming "freelancer" is the value when freelancer is selected
