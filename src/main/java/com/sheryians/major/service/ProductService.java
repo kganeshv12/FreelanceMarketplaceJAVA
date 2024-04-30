@@ -3,7 +3,7 @@ package com.sheryians.major.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.sheryians.major.model.Product;
-import com.sheryians.major.prototype.ProductPrototype;
+// import com.sheryians.major.prototype.ProductPrototype;
 import com.sheryians.major.repository.ProductRepository;
 
 import java.util.List;
@@ -15,8 +15,8 @@ public class ProductService {
     @Autowired
     ProductRepository productRepository;
 
-    @Autowired
-    ProductPrototype productPrototype;
+    // @Autowired
+    // ProductPrototype productPrototype;
 
     public List<Product> getAllProduct() {
         return productRepository.findAll();
@@ -39,12 +39,12 @@ public class ProductService {
     }
 
     // Prototype pattern method to clone a product
-    public Product cloneProduct(long id) {
-        Optional<Product> productOptional = productRepository.findById(id);
-        if (productOptional.isPresent()) {
-            Product existingProduct = productOptional.get();
-            return productPrototype.cloneProduct(existingProduct);
-        }
-        return null; // or throw exception if necessary
-    }
+    // public Product cloneProduct(long id) {
+    //     Optional<Product> productOptional = productRepository.findById(id);
+    //     if (productOptional.isPresent()) {
+    //         Product existingProduct = productOptional.get();
+    //         return productPrototype.cloneProduct(existingProduct);
+    //     }
+    //     return null; // or throw exception if necessary
+    // }
 }
