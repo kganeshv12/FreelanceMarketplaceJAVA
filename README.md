@@ -18,6 +18,8 @@ Mentor:Prof.BhargaviMokashi
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Features](#features)
+- [Images](#images)
 - [Patterns](#patterns)
   - [Factory Pattern](#factory-pattern)
   - [Data Transfer Object](#data-transfer-object)
@@ -34,6 +36,37 @@ Mentor:Prof.BhargaviMokashi
 ## Introduction
 
 The Online Freelance Marketplace project leverages Object-Oriented Analysis and Design (OOAD) principles using Java and Spring Boot. This project aims to provide a robust platform for freelancers to offer services and for customers to procure them efficiently. The project adheres to various design patterns and principles to ensure maintainability, scalability, and efficiency.
+
+## Features
+
+The online freelance marketplace allows you to create an account/ sign up using Google. It allows you to regeister either as a FEELANCER or as a CUSTOMER. 
+
+FREELANCER :
+
+As a freelancer, we can select the domain our service falls under, create new domains, add all the relevant details to the service , such as Name, description, duration , price, images, etc...
+
+CUSTOMER :
+
+As a customer, we can view multiple services accross multiple domains, purchase one or more services, and delete purchased services.
+
+## Images
+
+### Login
+![Images](Images/img0.png)
+
+![Images](Images/img5.png)
+
+### Shop
+![Images](Images/img1.png)
+
+### Service
+![Images](Images/img2.png)
+
+### Cart
+![Images](Images/img3.png)
+
+### Checkout
+![Images](Images/img4.png)
 
 ## Patterns
 
