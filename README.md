@@ -30,10 +30,6 @@ Mentor:Prof.BhargaviMokashi
   - [Creator Principle](#creator-principle)
   - [Controller Principle](#controller-principle)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
