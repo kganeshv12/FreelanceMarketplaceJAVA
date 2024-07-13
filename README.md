@@ -102,5 +102,20 @@ We delegate control logic to specialized controller components, ensuring a clear
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/online-freelance-marketplace.git
-   cd online-freelance-marketplace
+   git clone https://github.com/kganeshv12/FreelanceMarketplaceJAVA.git
+   cd FreelanceMarketplaceJAVA
+   ```
+2. **Configure the database:**
+
+    Update the application.properties file in the src/main/resources directory with your database connection details.
+
+3. **Install dependencies and build the project:**
+
+    ```bash
+    mvn clean install
+    ```
+    Run the application:
+    ```bash
+    mvn spring-boot:run
+    ```
+    The application will start running on http://localhost:8080.
